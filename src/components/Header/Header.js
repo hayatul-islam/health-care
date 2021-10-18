@@ -1,9 +1,13 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
+import useFirebase from '../../hooks/useFirebase';
 import './Header.css';
 
 const Header = () => {
+    const { user, logOut } = useAuth();
+
     return (
         <>
             <Navbar sticky="top" className="navbar-container mt-3" variant="dark" bg="dark" expand="lg">
@@ -17,7 +21,12 @@ const Header = () => {
                             <Link to="/home">Home</Link>
                             <Link to="/about">About Us</Link>
                             <Link to="/contact">Contact</Link>
-                            <Link to="/login">Login</Link>
+
+                            <Link>{user.displayName}</Link>
+                            {
+                                user.email ? <button onClick={logOut}>Log out</button> :
+                                    <Link to="/login">Login</Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

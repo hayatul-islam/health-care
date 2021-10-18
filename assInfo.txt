@@ -3,7 +3,7 @@ Assignment 10
 -----------------------
 Main part 
 -----------------------
-1. health care website
+1. health care website >> done 
 2. home pate => 4ta part(navbar, benar(slider), services, footer)
 3. services min 6. (name, img, description, btn)
     * btn click korle details dekabe
@@ -12,15 +12,15 @@ Main part
     * register 
     * login to register & register to login toggle
     * login hole logOut & user name dekate hobe
-4. footer
-5. fake data
+4. footer >> done
+5. fake data >> done
 6. extra 2 page
 
 
 --------------------
 Bonus
 --------------------
-1. side name
+1. side name >> done
 2. ridme file edit (name, side link, 5ta bulet point)
 3. reload korle error 
 4. login kora but reload korle login page a asbe na 
