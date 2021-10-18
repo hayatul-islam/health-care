@@ -1,0 +1,10 @@
+.top-banner{
+    background-image: url('https://t3.ftcdn.net/jpg/01/83/44/92/360_F_183449275_MrDIhbrXQ9jmwcviXlOoxlVLTPXu8PXL.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-attachment: fixed;
+}
+.banner-info{
+    color: white;
+}

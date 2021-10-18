@@ -1,0 +1,38 @@
+[
+    {
+        "id": "01",
+        "name": "Eye Care",
+        "description": "The three main types of eye care professionals are ophthalmologists, optometrists, and opticians.",
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/eye.png"
+    },
+    {
+        "id": "02",
+        "name": "Medical Checkup",
+        "description": "Definitions of medical checkup. a thorough physical examination; includes a variety of the person.",
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/chekk.png"
+    },
+    {
+        "id": "03",
+        "name": "Dental Care",
+        "description": "Dental Clinic New York - Quick And Easily Found At Asksly! Many Products. Easy Acces. Quick Results.",
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/totth-WXDFW9G.png"
+    },
+    {
+        "id": "04",
+        "name": "Cardiology",
+        "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease.",
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/cardio.png"
+    },
+    {
+        "id": "05",
+        "name": "Laboratory Service",
+        "description": "Laboratory Services provides a comprehensive range of diagnostic testing and clinical and consultative services to The Royal.",
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/medicine.png"
+    },
+    {
+        "id": "06",
+        "name": "Vaccination",
+        "description": "Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact.",
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/vaccine-WXDFW9G.png"
+    }
+]

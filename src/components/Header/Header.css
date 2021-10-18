@@ -1,0 +1,11 @@
+.navbar-container{
+    background: #00E5CC;
+}
+.header-logo{
+    width: 150px;
+}
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}

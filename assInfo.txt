@@ -1,0 +1,35 @@
+
+Assignment 10 
+-----------------------
+Main part 
+-----------------------
+1. health care website
+2. home pate => 4ta part(navbar, benar(slider), services, footer)
+3. services min 6. (name, img, description, btn)
+    * btn click korle details dekabe
+    * details private route (login )
+    * login (email & password) & google
+    * register 
+    * login to register & register to login toggle
+    * login hole logOut & user name dekate hobe
+4. footer
+5. fake data
+6. extra 2 page
+
+
+--------------------
+Bonus
+--------------------
+1. side name
+2. ridme file edit (name, side link, 5ta bulet point)
+3. reload korle error 
+4. login kora but reload korle login page a asbe na 
+5. responsive mobile
+6. context api
+
+
+
+------------------------
+Optional 
+------------------------
+1. 
