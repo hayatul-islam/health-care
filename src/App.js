@@ -13,53 +13,52 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Notfound from './components/NotFound/Notfound';
 import Details from './components/Details/Details';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
 
 function App() {
   return (
-    <div className="">
-      <AuthProvider>
-        <Router>
-          <Header />
-          <Switch>
+    <AuthProvider>
+      <Router>
+        <Header />
+        <Switch>
 
-            <Route exact path="/">
-              <Home />
-            </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-            <Route path="/service/:serviceId">
-              <Details />
-            </Route>
+          <PrivateRoute path="/service/:serviceId">
+            <Details />
+          </PrivateRoute>
 
-            <Route path="/home">
-              <Home />
-            </Route>
+          <Route path="/home">
+            <Home />
+          </Route>
 
-            <Route path="/about">
-              <About />
-            </Route>
+          <Route path="/about">
+            <About />
+          </Route>
 
-            <Route path="/contact">
-              <Contact />
-            </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
 
-            <Route path="/login">
-              <Login />
-            </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
 
-            <Route path="/register">
-              <Register />
-            </Route>
+          <Route path="/register">
+            <Register />
+          </Route>
 
-            <Route path="*">
-              <Notfound />
-            </Route>
+          <Route path="*">
+            <Notfound />
+          </Route>
 
-          </Switch>
-          <Footer />
-        </Router>
-      </AuthProvider>
-    </div>
+        </Switch>
+        <Footer />
+      </Router>
+    </AuthProvider>
   );
 }
 

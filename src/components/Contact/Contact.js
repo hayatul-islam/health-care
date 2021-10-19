@@ -5,7 +5,7 @@ const Contact = () => {
         <div className="py-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-md-6 p-2">
+                    <div className="col-lg-6 p-2">
                         <div className="shadow p-5">
                             <form action="">
                                 <input className="form-control mb-4" type="text" name="" id="" placeholder="Your Name" />
@@ -19,7 +19,7 @@ const Contact = () => {
                             <button className="btn btn-outline-info">Send Message</button>
                         </div>
                     </div>
-                    <div className="col-md-6 p-5">
+                    <div className="col-lg-6 p-5">
                         <div>
                             <h5 className="text-info">Contact Us</h5>
                             <h1>Let's Ge In Touch</h1>

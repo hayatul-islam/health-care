@@ -19,8 +19,10 @@ const Register = () => {
 
                             <input className="form-control bg-info" type="submit" value="Register" />
                         </form>
-                        <p className="pt-5 text-center">Or Login</p>
-                        <button onClick={signInUsingGoogle} className="btn btn-outline-dark"><i class="fab fa-google"></i></button>
+                        <div className="text-center mb-3">
+                            <p className="pt-5 text-center">Or Register</p>
+                            <button onClick={signInUsingGoogle} className="btn btn-outline-dark"><i class="fab fa-google"></i></button>
+                        </div>
 
 
                         <Link className="login-account" to="/login">I have an Account. Login</Link>

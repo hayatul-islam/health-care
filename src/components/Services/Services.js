@@ -12,8 +12,8 @@ const Services = () => {
 
     return (
         <div className="services-container">
-            <div className="p-5 w-75 mx-auto text-center">
-                <h4>Medical Services</h4>
+            <div className="p-5 text-center">
+                <h5>Medical Services</h5>
                 <h1>Our Healthcare Service</h1>
                 <p>Some primary care services are delivered within hospitals. Depending on the organization and policies of the national health system</p>
             </div>

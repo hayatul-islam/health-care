@@ -3,36 +3,48 @@
         "id": "01",
         "name": "Eye Care",
         "description": "The three main types of eye care professionals are ophthalmologists, optometrists, and opticians.",
-        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/eye.png"
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/eye.png",
+        "photoUrl": "https://yoursightmatters.com/wp-content/uploads/2019/01/1-YSM-Jan.jpg",
+        "details": "When it comes to eye-care, Collagen is a compound that has shown significant promise and applications in alleviating most eye-related issues. It is today being increasingly used in most eye-care products due to its numerous benefits."
     },
     {
         "id": "02",
         "name": "Medical Checkup",
         "description": "Definitions of medical checkup. a thorough physical examination; includes a variety of the person.",
-        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/chekk.png"
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/chekk.png",
+        "photoUrl": "https://www.makatimed.net.ph/files/thumb/afbc7e783544a08/1000",
+        "details": "In a physical examination, medical examination, or clinical examination, a medical practitioner examines a patient for any possible medical signs or symptoms of a medical condition"
     },
     {
         "id": "03",
         "name": "Dental Care",
         "description": "Dental Clinic New York - Quick And Easily Found At Asksly! Many Products. Easy Acces. Quick Results.",
-        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/totth-WXDFW9G.png"
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/totth-WXDFW9G.png",
+        "photoUrl": "https://www.expatica.com/app/uploads/sites/3/2014/05/dentistsinNL.jpg",
+        "details": "German and Swiss dental implants with warranty by a team of expert implantologists. 5 star dental offices with world class sterilization and hygiene norms. Latest Tech. 5 Star Experience. Multi-Lingual"
     },
     {
         "id": "04",
         "name": "Cardiology",
         "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease.",
-        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/cardio.png"
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/cardio.png",
+        "photoUrl": "https://chattogram.evercarebd.com/wp-content/uploads/2021/05/cardiology.jpg",
+        "details": "Small Group Courses With Plenty Of Hands-On Scanning Sessions. Register Online Now. Including Abdonmial Radiology, Cardiac Ultrasound & Much More. Flexible Physiotherapy. Courses: Spinal Surgery"
     },
     {
         "id": "05",
         "name": "Laboratory Service",
         "description": "Laboratory Services provides a comprehensive range of diagnostic testing and clinical and consultative services to The Royal.",
-        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/medicine.png"
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/medicine.png",
+        "photoUrl": "https://www.828urgentcare.com/blog/wp-content/uploads/2018/03/Onsite-Laboratory-Investigations-and-Screening-Services.jpg",
+        "details": "The progress being generated in the lab applies to a continuum of applications, from R&D to manufacturing, requiring specialized expertise to meet global demands. We go in-depth on your business and ask questions to better understand your holistic and specific needs"
     },
     {
         "id": "06",
         "name": "Vaccination",
         "description": "Vaccination is a simple, safe, and effective way of protecting people against harmful diseases, before they come into contact.",
-        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/vaccine-WXDFW9G.png"
+        "img": "https://kit.baliniz.com/medicalife/wp-content/uploads/sites/10/2021/08/vaccine-WXDFW9G.png",
+        "photoUrl": "https://ichef.bbci.co.uk/news/976/cpsprodpb/5A5D/production/_120533132_gettyimages-1301575205.jpg",
+        "details": "Our vaccination dataset uses the most recent official numbers from governments and health ministries worldwide. Population estimates for per-capita metrics are based on the United Nations World Population Prospects. Income groups are based on the World Bank classification"
     }
 ]

@@ -6,7 +6,7 @@ const About = () => {
     return (
         <>
             <div>
-                <h1>About Us</h1>
+                <h1 className="text-center py-5">About Us</h1>
                 <div className="container">
                     <div className="row">
                         <div className="col-md-6">
