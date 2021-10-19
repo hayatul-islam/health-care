@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import useFirebase from '../../hooks/useFirebase';
 import Service from '../Service/Service';
 import './Services.css';
 
@@ -13,7 +12,7 @@ const Services = () => {
     return (
         <div className="services-container">
             <div className="p-5 text-center">
-                <h5>Medical Services</h5>
+                <h5 className="text-info">Medical Services</h5>
                 <h1>Our Healthcare Service</h1>
                 <p>Some primary care services are delivered within hospitals. Depending on the organization and policies of the national health system</p>
             </div>
@@ -40,7 +39,7 @@ const Services = () => {
                     </Col>
                     <Col>
                         <div className="py-5">
-                            <Link className="appointment-btn" to="/">Make Appointment</Link>
+                            <Link className="appointment-btn" to="/contact">Contact Us</Link>
                             <Link className="service-btn" to="/">All Services <i class="fas fa-arrow-right"></i></Link>
                         </div>
                     </Col>

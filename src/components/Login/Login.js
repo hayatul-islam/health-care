@@ -5,7 +5,9 @@ import './Login.css';
 
 
 const Login = () => {
-    const { signInUsingGoogle, signInEmailAndPassword, userEmail, userPassword } = useAuth()
+    const { signInUsingGoogle, signInEmailAndPassword, userEmail, error } = useAuth();
+    console.log(userEmail);
+
     return (
         <div className="login-container py-5">
             <div className="container">
@@ -14,10 +16,10 @@ const Login = () => {
 
                     <form onSubmit={signInEmailAndPassword}>
                         <label htmlFor="email">Email</label>
-                        <input onBlur={userEmail} className="form-control" type="email" name="" id="" placeholder="Type your Email" /> <br />
+                        <input className="form-control" type="email" name="" id="" placeholder="Type your Email" /> <br />
 
                         <label htmlFor="password">Password</label>
-                        <input onBlur={userPassword} className="form-control" type="password" name="" id="" placeholder="Type your password" /> <br />
+                        <input className="form-control" type="password" name="" id="" placeholder="Type your password" /> <br />
 
                         <input className="form-control bg-info" type="submit" value="Login" />
                     </form>
@@ -28,6 +30,8 @@ const Login = () => {
 
                     <Link className="login-account" to="/register">Create new Account. Register</Link>
                 </div>
+
+                <p>{error}</p>
 
             </div>
         </div>

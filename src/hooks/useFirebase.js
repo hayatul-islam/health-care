@@ -12,7 +12,7 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const [userName, setUserName] = useState('');
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -35,9 +35,13 @@ const useFirebase = () => {
 
     const createNewUser = e => {
         e.preventDefault();
+        registerNewUser(email, password)
+    }
+
+    const registerNewUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-
+                console.log(result.user)
             })
     }
 
@@ -49,10 +53,20 @@ const useFirebase = () => {
         setPassword(e.target.value);
     }
 
-    const signInEmailAndPassword = (email, password) => {
+    const signInEmailAndPassword = e => {
+        e.preventDefault()
+        signInUser(email, password)
+
+    }
+
+    const signInUser = (email, password) => {
         signInWithEmailAndPassword(auth, email, password)
+
             .then(result => {
-                console.log(result);
+                setUser(result.user)
+            })
+            .catch(error => {
+                setEmail(error.message)
             })
     }
 
@@ -80,7 +94,8 @@ const useFirebase = () => {
         userPassword,
         signInEmailAndPassword,
         logOut,
-        services
+        services,
+        setUser,
     }
 }
 

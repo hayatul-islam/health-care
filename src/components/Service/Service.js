@@ -16,7 +16,7 @@ const Service = ({ service }) => {
                         <Card.Text className="text-muted">
                             {description}
                         </Card.Text>
-                        <Link className="link-btn" to={`/service/${id}`}>Read More <i class="fas fa-arrow-right"></i></Link>
+                        <Link className="link-btn" to={`/service/${id}`}>{name} Details <i class="fas fa-arrow-right"></i></Link>
                     </Card.Body>
                 </Card>
             </Col>

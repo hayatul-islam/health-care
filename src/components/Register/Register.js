@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
-    const { signInUsingGoogle, createNewUser, userEmail, userPassword } = useFirebase()
+    const { signInUsingGoogle, createNewUser, userEmail, userPassword } = useAuth();
     return (
         <div>
             <div className="login-container py-5">
@@ -11,6 +11,7 @@ const Register = () => {
                     <div className="login-form mx-auto shadow p-3">
                         <h1 className="text-center">Register</h1>
                         <form onSubmit={createNewUser}>
+
                             <label htmlFor="email">Email</label>
                             <input onBlur={userEmail} className="form-control" type="email" name="" id="" placeholder="Type your Email" /> <br />
 
