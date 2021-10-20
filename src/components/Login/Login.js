@@ -16,10 +16,10 @@ const Login = () => {
 
                     <form onSubmit={signInEmailAndPassword}>
                         <label htmlFor="email">Email</label>
-                        <input className="form-control" type="email" name="" id="" placeholder="Type your Email" /> <br />
+                        <input className="form-control" type="email" name="" id="" placeholder="Type your Email" required /> <br />
 
                         <label htmlFor="password">Password</label>
-                        <input className="form-control" type="password" name="" id="" placeholder="Type your password" /> <br />
+                        <input className="form-control" type="password" name="" id="" placeholder="Type your password" required /> <br />
 
                         <input className="form-control bg-info" type="submit" value="Login" />
                     </form>

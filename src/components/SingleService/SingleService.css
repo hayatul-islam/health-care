@@ -1,0 +1,14 @@
+.single-img {
+    height: 300px;
+}
+.single-btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: #1ae0e0;
+}
+.single-btn:hover{
+    color: black;
+}

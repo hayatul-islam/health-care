@@ -1,0 +1,19 @@
+.service-banner img{
+    position: relative;
+    opacity: .8;
+    height: 350px;
+}
+.service-banner h1{
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    text-align: center;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+    .service-banner h1{
+        left: 0;
+    }
+  }

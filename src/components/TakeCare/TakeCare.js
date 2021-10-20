@@ -5,7 +5,7 @@ const TakeCare = () => {
     return (
         <div className="py-5 takeCare">
             <div className="container">
-                <div className="row">
+                <div className="row pb-5">
                     <div className="text-center">
                         <h2>We don’t just give care We take care as well.</h2>
                         <p>We're provides quality local caregivers in your community for professional, attentive in-home care.</p>

@@ -12,7 +12,6 @@ const useFirebase = () => {
     const [error, setError] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [userName, setUserName] = useState('');
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -41,7 +40,7 @@ const useFirebase = () => {
     const registerNewUser = (email, password) => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
-                console.log(result.user)
+                setUser(result.user);
             })
     }
 

@@ -19,13 +19,14 @@ const Header = () => {
                         <Nav className="mx-auto">
                             <Link to="/home">Home</Link>
                             <Link to="/about">About Us</Link>
+                            <Link to="/services">Services</Link>
                             <Link to="/contact">Contact</Link>
 
 
                         </Nav>
                         <div className="">
                             <div>
-                                <Link>{user.displayName}</Link>
+                                <Link>{user.displayName ?? user.email}</Link>
                                 {
                                     user.email ? <button className="logOut-btn" onClick={logOut}>Log out</button> :
                                         <Link className="logOut-btn" to="/login">Login</Link>

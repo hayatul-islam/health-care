@@ -14,6 +14,7 @@ import Contact from './components/Contact/Contact';
 import Notfound from './components/NotFound/Notfound';
 import Details from './components/Details/Details';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import MainServices from './components/MainServices/MainServices';
 
 
 function App() {
@@ -39,9 +40,17 @@ function App() {
             <About />
           </Route>
 
-          <Route path="/contact">
-            <Contact />
+          <PrivateRoute path="/services">
+            <MainServices />
+          </PrivateRoute>
+
+          <Route path="/singleService/:serviceId">
+            <Details />
           </Route>
+
+          <PrivateRoute path="/contact">
+            <Contact />
+          </PrivateRoute>
 
           <Route path="/login">
             <Login />

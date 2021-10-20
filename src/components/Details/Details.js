@@ -24,7 +24,7 @@ const Details = () => {
                         <h5 className="mb-3">{description}</h5>
                         <p>{details}</p>
                         <button className="btn btn-outline-dark">
-                            <Link to="/home" className="link-btn">Back Services</Link>
+                            Back Services
                         </button>
                     </div>
                 </div>
