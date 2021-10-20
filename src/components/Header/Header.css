@@ -9,6 +9,9 @@ nav a {
     padding: 10px;
     color: white;
 }
+nav a:hover{
+    color:#00E5CC;
+}
 
 .logOut-btn{
     border: 1px solid white;
@@ -19,4 +22,8 @@ nav a {
 }
 .logOut-btn:hover{
     color: white;
+}
+
+.activeNav{
+    color: #00E5CC;
 }

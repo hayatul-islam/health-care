@@ -1,12 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Login.css';
 
 
 const Login = () => {
-    const { signInUsingGoogle, signInEmailAndPassword, userEmail, error } = useAuth();
-    console.log(userEmail);
+    const { signInUsingGoogle, signInEmailAndPassword, error } = useAuth();
+
+    const location = useLocation();
+    const redirect_url = location.state?.from || '/home';
+
+    const history = useHistory();
+
+    const handleGoogleLogin = () => {
+        signInUsingGoogle()
+            .then(result => {
+                history.push(redirect_url)
+            })
+
+    }
 
     return (
         <div className="login-container py-5">
@@ -25,13 +37,13 @@ const Login = () => {
                     </form>
                     <div className="text-center mb-3">
                         <p className="pt-5 text-center">Or Login</p>
-                        <button onClick={signInUsingGoogle} className="btn btn-outline-dark"><i class="fab fa-google"></i></button>
+                        <button onClick={handleGoogleLogin} className="btn btn-outline-dark"><i class="fab fa-google"></i></button>
                     </div>
 
                     <Link className="login-account" to="/register">Create new Account. Register</Link>
                 </div>
 
-                <p>{error}</p>
+                <p className="text-danger text-center mt-4">{error}</p>
 
             </div>
         </div>

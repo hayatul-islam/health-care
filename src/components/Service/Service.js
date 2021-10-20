@@ -1,4 +1,3 @@
-
 import { Card, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Service.css';

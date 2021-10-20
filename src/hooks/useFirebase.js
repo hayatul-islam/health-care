@@ -23,14 +23,10 @@ const useFirebase = () => {
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider()
     const signInUsingGoogle = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                setUser(result.user);
-            })
-            .catch(error => {
-                setError(error.message)
-            })
+        return signInWithPopup(auth, googleProvider)
+
     }
+
 
     const createNewUser = e => {
         e.preventDefault();
@@ -41,6 +37,9 @@ const useFirebase = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUser(result.user);
+            })
+            .catch(error => {
+                setError(error.message)
             })
     }
 
@@ -65,7 +64,7 @@ const useFirebase = () => {
                 setUser(result.user)
             })
             .catch(error => {
-                setEmail(error.message)
+                setError(error.message)
             })
     }
 

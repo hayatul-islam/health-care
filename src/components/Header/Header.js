@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Header.css';
 
@@ -17,16 +17,16 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mx-auto">
-                            <Link to="/home">Home</Link>
-                            <Link to="/about">About Us</Link>
-                            <Link to="/services">Services</Link>
-                            <Link to="/contact">Contact</Link>
+                            <NavLink activeClassName="activeNav" to="/home">Home</NavLink>
+                            <NavLink activeClassName="activeNav" to="/about">About Us</NavLink>
+                            <NavLink activeClassName="activeNav" to="/services">Services</NavLink>
+                            <NavLink activeClassName="activeNav" to="/contact">Contact</NavLink>
 
 
                         </Nav>
                         <div className="">
                             <div>
-                                <Link>{user.displayName ?? user.email}</Link>
+                                <span className="text-white p-3">{user.displayName ?? user.email}</span>
                                 {
                                     user.email ? <button className="logOut-btn" onClick={logOut}>Log out</button> :
                                         <Link className="logOut-btn" to="/login">Login</Link>

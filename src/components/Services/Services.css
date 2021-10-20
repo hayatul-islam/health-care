@@ -13,8 +13,14 @@
     padding: 10px 20px;
     border-radius: 30px;
 }
+.appointment-btn:hover{
+    color: white;
+}
 .service-btn{
     text-decoration: none;
     color:#00E5CC;
     padding-left: 30px;
+}
+.service-btn:hover{
+    color: #00E5CC;
 }
